@@ -2,8 +2,13 @@
 title: "Markdown Viewer"
 ---
 
-import MarkdownViewer from '../components/MarkdownViewer.astro';
+import MarkdownViewer from '../components/MarkdownViewer.jsx';
+import style from '../styles/global.css';
 
 # Markdown Viewer
 
-<MarkdownViewer />
+<textarea></textarea>
+<script>
+const easyMDE = new EasyMDE();
+easyMDE.value();
+</script>
