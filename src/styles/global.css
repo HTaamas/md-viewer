@@ -5,24 +5,22 @@ html {
     background: #131313;
     background-size: 100%;
     color: #fff;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 5% 20% 10% 20%;
 }
 
 a {
-    color: gray;
+    color: #f77878;
     text-decoration: underline;
     transition: 0.3s;
 }
 
 a:hover {
-    color: white;
+    color: #f9b9b9;
 }
 
 #title {
     font-size: 3rem;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 5rem 0;
     padding: 0;
 }
