@@ -1,0 +1,30 @@
+import Title from '../components/Title.astro';
+import style from '../styles/global.css';
+
+export const components = { h1: Title };
+
+export const authors = [
+	{ name: 'Jane', email: 'hi@jane.com' },
+	{ name: 'John', twitter: '@john2002' },
+];
+export const published = new Date('2022-02-01');
+
+<h1 id="title">Hello, world!</h1>
+
+Written by: {new Intl.ListFormat('en').format(authors.map(d => d.name))}.
+
+Published on: {new Intl.DateTimeFormat('en', {dateStyle: 'long'}).format(published)}.
+
+## Syntax highlighting
+
+We also support syntax highlighting in MDX out-of-the-box! This example uses the default [Shiki](https://shiki.style) theme. See the [MDX integration docs](https://docs.astro.build/en/guides/integrations-guide/mdx/#syntax-highlighting) for configuration options.
+
+```astro
+---
+const weSupportAstro = true;
+---
+
+<h1>Hey, what theme is that? Looks nice!</h1>
+```
+
+
